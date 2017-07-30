@@ -8,11 +8,11 @@ INSTRUÇÕES:
 
 Abra o Instagram em um browser
 Vá em seu perfil
-	Clique em (Seguidores)
-	Clique com o botão direito dentro da sua lista de seguidores
-	Clique em inspecionar elemento
-	Copie a <ul> em que estão as <li> com os seus seguidores
-	Salve em um bloco de notas com o nome (followers.txt)
+	- Clique em (Seguidores)
+	- Clique com o botão direito dentro da sua lista de seguidores
+	- Clique em inspecionar elemento
+	- Copie a UL em que estão as LI's com os seus seguidores
+	- Salve em um bloco de notas com o nome (followers.txt)
 Repita os passos acima para ‘Seguindo’ e salve como (following.txt)
 
 Salve os arquivos na mesma pasta em que está o programa. Ao ser executado o programa gera um arquivo com o nome (Não_Seguidores.txt), onde são listados os usuários que não te seguem de volta.
