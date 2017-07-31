@@ -8,7 +8,8 @@ INSTRUÇÕES:
 
 Abra o Instagram em um browser
 Vá em seu perfil
-	- Clique em (Seguidores)
+	- Clique em (Seguidores) 
+	- role até o último da lista
 	- Clique com o botão direito dentro da sua lista de seguidores
 	- Clique em inspecionar elemento
 	- Copie a UL em que estão as LI's com os seus seguidores
