@@ -56,7 +56,7 @@ for i, caracter in enumerate(txt_followers):
     #------------------------------------------------------------------------#
 
 # unir os vetores em uma matriz
-unidos_ers = np.column_stack((nome_insta_ers, nome_user_ers))#, eu_sigo_ers))
+# unidos_ers = np.column_stack((nome_insta_ers, nome_user_ers))#, eu_sigo_ers))
 
 arq_followers.close()
 ##############################################################################
@@ -98,7 +98,7 @@ for i, caracter in enumerate(txt_following):
     #------------------------------------------------------------------------#
 
 # unir os vetores em uma matriz
-unidos_ing = np.column_stack((nome_insta_ing, nome_user_ing))#, eu_sigo_ing))
+#unidos_ing = np.column_stack((nome_insta_ing, nome_user_ing))#, eu_sigo_ing))
 
 arq_following.close()
 ##############################################################################
@@ -120,12 +120,11 @@ print(len(unidos_ers))
 def segue_de_volta(matriz_me_segue, quem_eu_sigo):
     return quem_eu_sigo in matriz_me_segue
 
-
 arq = open('Nao_Seguidores.txt', 'w')
 
 arq.write("____________________ NÃO TE SEGUE _____________________\n\n-------------------------------------------------------\n")
-for user in unidos_ing:
-    if not segue_de_volta(nome_insta_ers, user[0]):
+for user in nome_insta_ing:
+    if not segue_de_volta(nome_insta_ers, user):
         nao_segue += 1
         arq.write(str(user) + "\n-------------------------------------------------------\n")
 arq.write("\nTOTAL = " + str(nao_segue))
