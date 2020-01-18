@@ -102,31 +102,19 @@ for i, caracter in enumerate(txt_following):
 
 arq_following.close()
 ##############################################################################
-'''
-for i, nome in enumerate(nome_insta_ing):
-    print(nome, end="--")
-    print(nome_user_ing[i])
-    
-print(nome_user_ing)
-print(nome_insta_ing)
-print(len(nome_insta_ing))
-print(len(nome_user_ing))
-print(len(eu_sigo_ing))
-print(len(unidos_ers))
-#print(unidos_ing)
-
-# infoma a 'matriz de seguidores' e 'quem' da matriz de quem sigo
-'''
 def segue_de_volta(matriz_me_segue, quem_eu_sigo):
     return quem_eu_sigo in matriz_me_segue
 
 arq = open('Nao_Seguidores.txt', 'w')
 
 arq.write("____________________ NÃO TE SEGUE _____________________\n\n-------------------------------------------------------\n")
-for user in nome_insta_ing:
-    if not segue_de_volta(nome_insta_ers, user):
-        nao_segue += 1
-        arq.write(str(user) + "\n-------------------------------------------------------\n")
-arq.write("\nTOTAL = " + str(nao_segue))
+
+followers = set(nome_insta_ers)
+following = set(nome_insta_ing)
+non_followers = following - followers
+
+for user in non_followers:
+    arq.write(str(user) + "\n-------------------------------------------------------\n")
+arq.write("\nTOTAL = " + str(len(non_followers)))
 arq.write("\n________________________________________________________\n")
 arq.close()
