@@ -20,7 +20,7 @@ temp_nome_lista_ers = ""
 temp_nome_lista_ing = ""
 
 ##############################################################################
-arq_followers = open('followers.txt', 'r')
+arq_followers = open('followers.txt', 'r', encoding='utf8')
 txt_followers = arq_followers.read()
 
 #Iteração para pegar e guardar os dados
@@ -62,7 +62,7 @@ arq_followers.close()
 ##############################################################################
 
 ##############################################################################
-arq_following = open('following.txt', 'r')
+arq_following = open('following.txt', 'r', encoding='utf8')
 txt_following = arq_following.read()
 
 #Iteração para pegar e guardar os dados
